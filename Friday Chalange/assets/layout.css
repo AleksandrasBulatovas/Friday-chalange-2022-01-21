@@ -170,4 +170,6 @@
 .footer-line p {
     font-family: 'Montserrat';
     font-size: 11px;
+    color: #000000;
+    font-weight: 600;
 }

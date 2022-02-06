@@ -7,10 +7,16 @@
 }
 
 #header .navbar:hover {
-    width: 200px;
-    ;   
+    width: 200px;   
 }
 
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;  
+}
 
 #header .logo {
     display: block;
@@ -91,85 +97,75 @@
     position: absolute;
     left: 28px;
 }
-                
-* {
-    box-sizing: border-box;
-}
-.container {
-    width: 100%;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-}
+
 #home {
-    background-image: url(../img/workplace.png);
-    background-repeat: no-repeat;
-    background-position-x: 100px;
-    background-position-y: 229px;
-    background-size: 1609px 400px;
+    padding-left: 100px;
 }
+
+.img {
+    width: 100%;
+    height: auto;
+    max-width: 1607px;
+    max-height: 440px;
+    margin-top: 30px;      
+}
+
 #home .row {
     display: flex;
-    column-gap: 34%;
+    flex-wrap: wrap;
+    column-gap: 570px;
     justify-content: center;
     align-items: center;
-    padding-top: 56px;
+    padding-top: 30px;
 }
 
 #home .bottom-row {
-    text-align: center;
-    position: fixed;
-    bottom: 85px;
-    width: 50%;
-    border: 2px solid #02577A;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #02577a;
     border-radius: 25px;
-    padding: 25px;
-    margin: 0 295px;
+    box-sizing: border-box;
+    width: 65%;
+    margin: 35px auto;
+    padding: 22px;
 }
+
 #home .hello p {
     font-size: 30px;
     line-height: 44px;
     letter-spacing: -1px;
     padding-left: 100px;
 }
+
 #home .clock {
-    padding: 20px 96px;
+    padding: 22px 90px;
     border: 1px solid #FFFFFF;
     border-radius: 25px;
     background-color: #FFFFFF;
 }
+
 #home .clock p {
     font-size: 24px;
     letter-spacing: -1px;
     line-height: 44px;
     margin: 0;
-
-}
-#home .clock h2 {
-    font-size: 34px;
-    color: #02577a;
-    margin: 0;
 }
 
- #footer {
-    left: 686px;
-    top: 820px;
-    position: absolute;
-    text-align: center;
-    color: #02577a;
+#home .clock .hour {
+    font-size: 36px;
+    font-weight: 500;
+    color: #02577A;
 }
 
-.footer-line {
-    width: 340px;
-    height: 2px;
-    background-color: #02577a;
-    padding: 1px;
-}   
-
-.footer-line p {
+#footer p {
     font-family: 'Montserrat';
     font-size: 11px;
     color: #000000;
-    font-weight: 600;
+    font-weight: 500;
+    border-top: 1px solid #02577A;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 346px;
+    line-height: 24px;
 }
